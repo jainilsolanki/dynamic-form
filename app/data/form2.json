@@ -1,0 +1,167 @@
+{
+  "form": {
+    "title": "User Information Form",
+    "description": "Please provide your personal, academic, and work details below.",
+    "groups": [
+      {
+        "title": "Basic Information",
+        "fields": [
+          {
+            "label": "Full Name",
+            "type": "text",
+            "name": "fullName",
+            "placeholder": "Enter your full name",
+            "required": true
+          },
+          {
+            "label": "Email Address",
+            "type": "text",
+            "name": "email",
+            "placeholder": "Enter your email address",
+            "required": true
+          },
+          {
+            "label": "Country",
+            "type": "dropdown",
+            "name": "country",
+            "options": [
+              "United States",
+              "Canada",
+              "India",
+              "United Kingdom",
+              "Australia"
+            ],
+            "required": true
+          },
+          {
+            "label": "Phone Number",
+            "type": "text",
+            "name": "phoneNumber",
+            "placeholder": "Enter your phone number",
+            "required": true
+          },
+          {
+            "label": "Preferred Mode of Communication",
+            "type": "radio",
+            "name": "communicationMode",
+            "options": [
+              { "label": "Email", "value": "email" },
+              { "label": "Phone", "value": "phone" },
+              { "label": "SMS", "value": "sms" }
+            ],
+            "required": true
+          }
+        ]
+      },
+      {
+        "title": "Educational Background",
+        "fields": [
+          {
+            "label": "Highest Degree Earned",
+            "type": "dropdown",
+            "name": "degree",
+            "options": [
+              "High School",
+              "Bachelor's Degree",
+              "Master's Degree",
+              "Ph.D."
+            ],
+            "required": true
+          },
+          {
+            "label": "Year of Graduation",
+            "type": "number",
+            "name": "graduationYear",
+            "placeholder": "Enter your year of graduation",
+            "min": 1980,
+            "max": 2024,
+            "required": true
+          },
+          {
+            "label": "Favorite Subjects",
+            "type": "checkbox",
+            "name": "favoriteSubjects",
+            "options": [
+              { "label": "Mathematics", "value": "math" },
+              { "label": "Physics", "value": "physics" },
+              { "label": "Chemistry", "value": "chemistry" },
+              { "label": "History", "value": "history" },
+              { "label": "Computer Science", "value": "cs" }
+            ]
+          },
+          {
+            "label": "Overall GPA",
+            "type": "slider",
+            "name": "gpa",
+            "min": 0.0,
+            "max": 4.0,
+            "step": 0.1
+          }
+        ]
+      },
+      {
+        "title": "Professional Experience",
+        "fields": [
+          {
+            "label": "Current Job Title",
+            "type": "text",
+            "name": "jobTitle",
+            "placeholder": "Enter your current job title",
+            "required": false
+          },
+          {
+            "label": "Current Employment Status",
+            "type": "radio",
+            "name": "employmentStatus",
+            "options": [
+              { "label": "Full-Time", "value": "fullTime" },
+              { "label": "Part-Time", "value": "partTime" },
+              { "label": "Unemployed", "value": "unemployed" },
+              { "label": "Student", "value": "student" }
+            ]
+          },
+          {
+            "label": "Professional Skills",
+            "type": "checkbox",
+            "name": "skills",
+            "options": [
+              { "label": "Programming", "value": "programming" },
+              { "label": "Team Management", "value": "teamManagement" },
+              { "label": "Graphic Design", "value": "graphicDesign" },
+              { "label": "Data Science", "value": "dataScience" },
+              { "label": "Public Speaking", "value": "publicSpeaking" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Hobbies and Preferences",
+        "fields": [
+          {
+            "label": "Hobby",
+            "type": "text",
+            "name": "hobby",
+            "placeholder": "Enter your favorite hobby"
+          },
+          {
+            "label": "Interest in Technology (1-10)",
+            "type": "slider",
+            "name": "techInterest",
+            "min": 1,
+            "max": 10,
+            "step": 1
+          },
+          {
+            "label": "Do you play any sports?",
+            "type": "radio",
+            "name": "sports",
+            "options": [
+              { "label": "Yes", "value": "yes" },
+              { "label": "No", "value": "no" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
