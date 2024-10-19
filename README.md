@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 Open terminal/cmd at the location where you want to setup this project then run the following command.
 ```
-git clone [repo url]
+git clone [repo url](https://github.com/jainilsolanki/dynamic-form)
 ```
 It will clone all the details into the specified location.
 
